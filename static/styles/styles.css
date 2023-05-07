@@ -1,0 +1,144 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    color-scheme: dark light;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #303030;
+    color: cadetblue;
+}
+button {
+    color: aliceblue;
+    background-color: darkslategrey;
+    border-style: hidden;
+    padding: .3rem;
+    border-radius: 5px;
+}
+button:hover {
+    box-shadow: 0 0 5px darkslategrey;
+}
+a {
+    color: cadetblue;
+    text-underline-offset: 3px;
+    text-decoration: underline 0.0125em rgba(253,253,253,0);
+    transition: text-decoration-color .5s;
+}
+
+a:hover {
+    text-decoration-color: cadetblue;
+    text-decoration-thickness: .0125em;
+    text-underline-offset: 3px;
+}
+nav {
+    position: sticky;
+    top: 0;
+    padding-left: 2rem;
+    float: right;
+    border: 1px solid darkslategray;
+    border-right: 0;
+    border-radius: 999em 40px 40px 999em;
+    background-color: black;
+    box-shadow: -0 3px 10px rgb(56, 55, 55);
+    
+}
+
+nav li {
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 33px;
+    font-weight: bold;
+}
+h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 12px;
+    
+}
+ul {
+    margin: 1rem;
+}
+
+.hero {
+    background-color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 30rem;
+    padding: 2rem;
+    border: 1px solid darkslategray;
+    border-left: 0px;
+    border-radius: 40px 999em 999em 40px;
+    box-shadow: 0 3px 10px rgb(56, 55, 55)
+    /* border: 1px solid white; */
+}
+
+.hero p {
+    margin-left: 3rem;
+    width: 20rem;
+    padding-top: .5rem;
+}
+
+.content {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.url_list {
+    width: 50%;
+    margin: 0 auto;
+}
+.url_list li {
+    margin-bottom: .25rem;
+}
+
+.url_form {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.url_form input {
+    padding: .3rem;
+    color: aliceblue;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: darkslategrey;
+}
+
+.url_form input:hover {
+    box-shadow: 0 0 5px darkslategrey;
+}
+
+.short_url {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2rem;
+
+}
