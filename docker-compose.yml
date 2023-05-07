@@ -9,3 +9,5 @@ services:
             - type: bind
               source: .
               target: /app/
+        networks:
+          - nginx-proxy-manager_default
