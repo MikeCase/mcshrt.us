@@ -4,7 +4,7 @@ services:
         build: .
         image: mcshrt.us:latest
         ports:
-            - 5059:5059
+            - 5000:5059
         volumes:
             - type: bind
               source: .
