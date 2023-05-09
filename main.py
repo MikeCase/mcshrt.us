@@ -22,7 +22,9 @@ def index():
         shortended_urls[short_url] = long_url
         with open("urls.json", "w") as f:
             json.dump(shortended_urls, f)
+
         return render_template("index.html", url_root=request.url_root, short_url=short_url)
+    
     return render_template("index.html")
 
 @app.route("/<short_url>")

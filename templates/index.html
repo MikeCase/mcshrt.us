@@ -8,17 +8,15 @@
     <title>Url Shortening by Mike</title>
 </head>
 <body>
-    <div class="url_form">
+    <div class="url_form center">
         <form action="{{ url_for('index') }}" method="POST">
-            <label for="long_url">Url:</label>
             <input type="url" name="long_url" placeholder="Enter the longform url"/>
-            <button type="submit">Submit</button>
+            <button type="submit">Shorten</button>
         </form>
     </div>
     {% if short_url %}
-    <div class="short_url">
-        <h4>Your url:</h4>
-        <h2><a href="{{url_root}}{{ short_url }}">{{url_root}}{{ short_url }}</a></h2>
+    <div class="short_url centerh">
+        <h2><a href="{{url_root}}{{ short_url }}" target="_blank">{{url_root}}{{ short_url }}</a></h2>
     </div>
     {% endif %}
 </body>
