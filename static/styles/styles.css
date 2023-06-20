@@ -49,7 +49,7 @@ a {
 }
 
 a:hover {
-    text-decoration-color: cadetblue;
+    text-decoration-color: #5f9ea0;
     text-decoration-thickness: .0125em;
     text-underline-offset: 3px;
 }
